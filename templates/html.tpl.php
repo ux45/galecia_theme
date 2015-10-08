@@ -59,9 +59,11 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <script type="text/javascript" src="/sites/all/themes/galecia/js/bootstrap-hover-dropdown.js"></script>
   <script type="text/javascript" src="/sites/all/themes/galecia/owl-carousel/owl.carousel.min.js"></script>
   <script>
     jQuery(document).ready(function(){
+      jQuery('.dropdown-toggle').dropdownHover();
       jQuery("#spotlight-carousel").owlCarousel({
         navigation: false,
         autoPlay: true,
@@ -71,6 +73,8 @@
       jQuery(".panel-info .pane-title").addClass("panel-heading");
       jQuery(".panel-info .pane-content").addClass("panel-body");
       jQuery(".container-quote_wrapper .views-field-edit-node a").addClass("btn btn-warning btn-sm");
+      jQuery(".node-page .field-type-taxonomy-term-reference .field-label").html('<i class="fa fa-tags fa-2"></i> ');
+      jQuery(".blog-post-tags a").addClass("label label-info").prepend('<i class="fa fa-tag"></i> ');
     });
   </script>
 </head>
