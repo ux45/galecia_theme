@@ -73,8 +73,15 @@
       jQuery(".panel-info .pane-title").addClass("panel-heading");
       jQuery(".panel-info .pane-content").addClass("panel-body");
       jQuery(".container-quote_wrapper .views-field-edit-node a").addClass("btn btn-warning btn-sm");
+      jQuery("#block-menu-menu-focus-areas ul.nav").addClass("nav-pills");
       jQuery(".node-page .field-type-taxonomy-term-reference .field-label").html('<i class="fa fa-tags fa-2"></i> ');
-      jQuery(".blog-post-tags a").addClass("label label-info").prepend('<i class="fa fa-tag"></i> ');
+      jQuery(".blog-post-tags a").addClass("label label-default").prepend('<i class="fa fa-tag"></i> ');
+      jQuery("#block-views-exp-presentations-page .block-title").prepend('<i class="fa fa-search"></i> ');
+      jQuery("#block-views-projects-block-1 .block-title").prepend('<i class="fa fa-search"></i> ');
+      jQuery("#block-views-blogs-block-1 .block-title").prepend('<i class="fa fa-tag"></i> ');
+      jQuery("#block-views-presentations-block-1 .views-summary a:contains('Uncategorized')").hide();
+      jQuery("#block-views-projects-block-1 .views-summary a:contains('Uncategorized')").hide();
+      jQuery("#block-views-blogs-block-1 .views-summary a:contains('Uncategorized')").hide();
     });
   </script>
 </head>
