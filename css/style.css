@@ -32,6 +32,11 @@ dd {
 #navbar .menu{
   float: right;
 }
+#navbar ul li.collapsed, 
+#navbar ul li.expanded, 
+#navbar ul li.leaf {
+  margin-right: 6px;
+}
 .navbar .logo{
   margin-top: 20px;
 }
@@ -42,46 +47,21 @@ dd {
   color: #006687;
   font-size: 17px;
   margin-top: 24px;
-  padding-top: 20px;
+  padding-top: 13px;
+  padding-bottom: 10px;
 }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
   background-color: #49B2D4;
 }
-ul.nice-menu-down {
-  background: transparent;
-  width: 100%;
-}
-ul.nice-menu li, ul.nice-menu li.menuparent {
-  border: none;
-  background: none !important;
-  background-color: transparent !important;
-  font-family: 'Source Sans Pro', sans-serif !important;
-  letter-spacing: normal;
-  font-size: 15px;
-  color: #036;
-  float: left;
-}
-ul.nice-menu a {
-color: #036;
-}
-ul.nice-menu li.menuparent ul{
-  background: #f9f9f9;
-  border-top: none;
-  padding: 10px;
-}
-ul.nice-menu-down .menuparent a {
-  font-size: 15px;
-  text-align: left;
-}
 .breadcrumb {
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0;
-    background: none;
-    margin-bottom: 25px;
-    padding: 8px 2px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background: none;
+  margin-bottom: 25px;
+  padding: 8px 2px;
 }
 
 .navbar-inverse .navbar-nav.secondary > li > a {
@@ -387,10 +367,12 @@ ul.nice-menu-down .menuparent a {
   padding-right: 0;
   width: 75%
 }
-#views-exposed-form-presentations-page div.views-submit-button {
+#views-exposed-form-presentations-page div.views-submit-button, 
+#views-exposed-form-projects-page div.views-submit-button {
   padding: .5em 0 0;
 }
-#views-exposed-form-presentations-page div.views-submit-button #edit-submit-presentations {
+#views-exposed-form-presentations-page div.views-submit-button #edit-submit-presentations, 
+#views-exposed-form-projects-page div.views-submit-button #edit-submit-projects {
   margin-top: 0;
   padding: 6px;
 }
