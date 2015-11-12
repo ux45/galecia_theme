@@ -91,7 +91,9 @@ dd {
 #content p, #content li {
   font-size: 14px;
 }
-
+.page-header {
+  text-transform: capitalize;
+}
 
 /* front page */
 .front .menu-path-front{
@@ -317,7 +319,7 @@ dd {
 
 /* presentations, blog, and projects index pages */
 .view-id-presentations.view-display-id-page .media > .pull-left {
-  max-width: 195px;
+  max-width: 240px;
 }
 .view-id-presentations.view-display-id-page .media > .pull-left img {
   width: 100%;
